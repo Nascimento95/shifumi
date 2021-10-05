@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <title>Document</title>
+    </head>
+    <body>
+        <header class="container-fluid bg-dark">
+            <div class="row">
+                <div class="col-12">
+                    <div>
+                        <h1 class="text-light text-center">Shifumi</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+       
+        <section class="container mt-5 ">
+            <div class="row ">
+                <div class="col-12 Player">
+                    <div class="d-flex justify-content-center">
+                        <button onClick="choicePlayer('pierre')"  id="pierre" type="button" class="btn btn-dark mx-4">Pierre </button>
+                        <button onClick="choicePlayer('feuille')" id ="Feuille"type="button" class="btn btn-dark mx-4">Feuille </button>
+                        <button onClick="choicePlayer('ciseaux')" id="Ciseaux"type="button" class="btn btn-dark mx-4">Ciseaux </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-5">
+                    <div class="text-end">
+                        <h2>choix du joueur</h2>
+                        <img id="image" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col-2 d-flex justify-content-center ">
+                    <div id="log-result" class="">
+                       <p class="fs-1 align-item-center">VS</p>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div>
+                        <h2>choix de l'ordinateur</h2>
+                        <img onClick="choicePlayer()" id="image-ia" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 IA">
+                    <div id="score" class="d-flex justify-content-center fs-3">
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-12 IA">
+                    <div id="winner" class="d-flex justify-content-center fs-3">
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
