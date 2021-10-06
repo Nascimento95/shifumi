@@ -4,14 +4,14 @@ var resultOfVersusPlayer = 0
 var winner = ""
 
 // fonction pour le choix du joueur et ce qui s'en suit
-function choicePlayer(choice){
+function choicePlayer(choice) {
     var image = document.getElementById("image")
     var numberResultPlayer = 0
     
-    if(choice == "pierre"){
+    if(choice == "pierre") {
         image.setAttribute("src", "https://www.jerome-reaux-creations.fr/DVP/codepen/shifumi/1-pierre.jpg") 
         numberResultPlayer = 1
-    } else if (choice == 'feuille'){
+    } else if (choice == 'feuille') {
         image.setAttribute("src", "https://www.jerome-reaux-creations.fr/DVP/codepen/shifumi/2-feuille.jpg")
         numberResultPlayer = 2
     } else if ( choice == "ciseaux") {
@@ -107,6 +107,17 @@ function choiceIa (){
     return ram
 }
 
+
+var myVar = setInterval(setColor, 3000);
+
+function setColor() {
+  var x = document.body;
+  x.style.backgroundColor = x.style.backgroundColor == "yellow" ? "pink" : "yellow" ;
+}
+
+function stopColor() {
+  clearInterval(myVar);
+}
 
 
 
